@@ -1,0 +1,96 @@
+.master {
+    display:flex;
+    justify-content:center;
+}
+
+img {
+
+}
+
+.title {
+    color:black;
+    text-align:center;
+}
+
+.captionText {
+    text-align:center;
+}
+
+.one {
+    background-color:red;
+}
+
+.two {
+    background-color:yellow;
+}
+
+.three {
+    background-color:blue;
+}
+
+/* For Everything Below the Size of a Tablet */
+@media (max-width:550px) {
+    .master {
+        flex-direction:column;
+    }
+    
+    img {
+        justify-content:center;
+        width:98vh;
+        margin:1vh;
+    }
+
+    .one {
+        width:100vh;
+    }
+
+    .two {
+        width:100vh;
+    }
+
+    .three {
+        width:100vh;
+    }
+
+    .title {
+        font-size:20vh;
+        margin-bottom:2vh;
+        padding-left:3vh;
+    }
+
+    .captionText {
+        font-size:5vh;
+        padding:0vh 2vh 2vh 2vh;
+    }
+}
+
+/* For Tablet Size Devices */
+@media /*(max-width:900px) and */(min-width:551px) {
+    .master {
+        flex-direction:row;
+    }
+
+    .title {
+        font-size:10vh;
+        margin-bottom:2vh;
+    }
+
+    img {
+        width:30vh;
+    }
+
+    .one {
+        width:30vh;
+        margin:0.5vh;
+    }
+
+    .two {
+        width:30vh;
+        margin:0.5vh;
+    }
+
+    .three {
+        width:30vh;
+        margin:0.5vh;
+    }
+}
